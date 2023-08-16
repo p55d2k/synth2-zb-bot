@@ -1,6 +1,10 @@
-from cryptography.fernet import Fernet
-from selenium.webdriver.chrome.options import Options
 import os
+try:
+  from cryptography.fernet import Fernet
+except:
+  os.system("pip install cryptography")
+  from cryptography.fernet import Fernet
+from selenium.webdriver.chrome.options import Options
 import sys
 import time
 

@@ -1,5 +1,10 @@
-from selenium import webdriver
-from pypinyin import pinyin
+try:
+  from selenium import webdriver
+  from pypinyin import pinyin
+except:
+  os.system("pip install selenium pypinyin")
+  from selenium import webdriver
+  from pypinyin import pinyin
 from constants import *
 from func import *
 import atexit
