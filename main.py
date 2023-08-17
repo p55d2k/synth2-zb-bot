@@ -1,15 +1,15 @@
+import os
 try:
   from selenium import webdriver
   from pypinyin import pinyin
 except:
-  os.system("pip install selenium pypinyin")
+  os.system("python3 -m pip install selenium pypinyin")
   from selenium import webdriver
   from pypinyin import pinyin
 from constants import *
 from func import *
 import atexit
 import time
-import os
 
 update_log("\n--- SESSION STARTED ---")
 update_log("DateTime: " + time.strftime("%H:%M:%S", time.localtime()) + ", " + time.strftime("%d/%m/%Y", time.localtime()) + "\n")
